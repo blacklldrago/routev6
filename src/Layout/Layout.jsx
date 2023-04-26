@@ -21,7 +21,6 @@ const Layout = () => {
         </ul>
         <h1>It doesn't shows you  page "about" because the role is admin. </h1>
         <h1>You can change it's role by changing role in code. </h1>
-        
       </div>
       <Outlet />
     </div>
