@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nothing = () => {
   return (
-    <div>!@#!@#!@#</div>
+    <div>Go to home</div>
   )
 }
 

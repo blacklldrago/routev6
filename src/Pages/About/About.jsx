@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 const About = () => {
-  return (
-    <div><h1>About</h1></div>
-  )
-}
+ 
+
+  return <h2>About (Protected: authenticated user required)</h2>;
+};
 
 export default About
