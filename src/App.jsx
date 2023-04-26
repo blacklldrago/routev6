@@ -11,8 +11,6 @@ import About from "./pages/About/About";
 import Nothing from "./pages/Nothing/Nothing";
 import UserById from "./pages/UserById/UserById";
 import Layout from "./layout/Layout";
-
-
 // FIRST WAY
 const routerForAdmin = createBrowserRouter([
   {
@@ -25,7 +23,7 @@ const routerForAdmin = createBrowserRouter([
       },
       {
         path: "/about",
-        element:<About/>
+        element: <About />,
       },
       {
         path: "user/:id",
@@ -38,7 +36,6 @@ const routerForAdmin = createBrowserRouter([
     ],
   },
 ]);
-
 const routerForStudent = createBrowserRouter([
   {
     path: "/",
@@ -50,7 +47,7 @@ const routerForStudent = createBrowserRouter([
       },
       {
         path: "/about",
-        element:<About/>
+        element: <About />,
       },
       {
         path: "*",
@@ -75,15 +72,12 @@ const routerForStudent = createBrowserRouter([
 
 function App() {
   let user = {
-    role: 1
-  }
-
+    role: 1,
+  };
   let routes = {
     0: <RouterProvider router={routerForAdmin} />,
     1: <RouterProvider router={routerForStudent} />,
-  }
-  return <>
-    {routes[user.role]}
-  </>;
+  };
+  return <>{routes[user.role]}</>;
 }
 export default App;
