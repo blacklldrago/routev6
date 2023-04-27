@@ -10,7 +10,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Nothing from "./pages/Nothing/Nothing";
 import UserById from "./pages/UserById/UserById";
-import Layout from "./layout/Layout";
+import Layout from "./Layout/Layout";
+
 // FIRST WAY
 const routerForAdmin = createBrowserRouter([
   {
